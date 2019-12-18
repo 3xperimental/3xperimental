@@ -1,4 +1,8 @@
-## 3xperimental Network
+## Special Thanks to 
+
+ArqTras[ArQmA]
+
+## 3xperimental Project
 
 Copyright (c) 2018-2019 The Arqma Network.    
 Copyright (c) 2020 3xperimental Project.  
