@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2014-2018, The Monero Project
 //
 // All rights reserved.
@@ -73,8 +73,8 @@
   #include <unistd.h>
 #endif
 
-#undef ARQMA_DEFAULT_LOG_CATEGORY
-#define ARQMA_DEFAULT_LOG_CATEGORY "miner"
+#undef 3xperimental_DEFAULT_LOG_CATEGORY
+#define 3xperimental_DEFAULT_LOG_CATEGORY "miner"
 
 using namespace epee;
 

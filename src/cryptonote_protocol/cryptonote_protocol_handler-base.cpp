@@ -2,7 +2,7 @@
 /// @author rfree (current maintainer in monero.cc project)
 /// @brief This is the place to implement our handlers for protocol network actions, e.g. for ratelimit for download-requests
 
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2014-2018, The Monero Project
 //
 // All rights reserved.
@@ -52,8 +52,8 @@
 
 #include "cryptonote_core/cryptonote_core.h" // e.g. for the send_stop_signal()
 
-#undef ARQMA_DEFAULT_LOG_CATEGORY
-#define ARQMA_DEFAULT_LOG_CATEGORY "net.cn"
+#undef 3xperimental_DEFAULT_LOG_CATEGORY
+#define 3xperimental_DEFAULT_LOG_CATEGORY "net.cn"
 
 // ################################################################################################
 // ################################################################################################

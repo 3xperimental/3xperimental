@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2017-2018, The Monero Project
 //
 // All rights reserved.
@@ -35,8 +35,8 @@
 #include "cryptonote_basic/cryptonote_format_utils.h"
 #include "multisig.h"
 
-#undef ARQMA_DEFAULT_LOG_CATEGORY
-#define ARQMA_DEFAULT_LOG_CATEGORY "multisig"
+#undef 3xperimental_DEFAULT_LOG_CATEGORY
+#define 3xperimental_DEFAULT_LOG_CATEGORY "multisig"
 
 using namespace std;
 

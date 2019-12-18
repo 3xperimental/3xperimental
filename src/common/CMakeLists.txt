@@ -1,5 +1,5 @@
 # Copyright (c) 2018-2019, The Arqma Network
-# Copyright (c) 2014-2018, The Monero Project
+# Copyright (c) 2020, 3xperimental Project
 #
 # All rights reserved.
 #
@@ -87,9 +87,9 @@ set(common_private_headers
   aligned.h
   combinator.h)
 
-arqma_private_headers(common
+3xperimental_private_headers(common
   ${common_private_headers})
-arqma_add_library(common
+3xperimental_add_library(common
   ${common_sources}
   ${common_headers}
   ${common_private_headers}
@@ -109,5 +109,5 @@ target_link_libraries(common
     ${OPENSSL_LIBRARIES}
     ${EXTRA_LIBRARIES})
 
-#arqma_install_headers(common
+#3xperimental_install_headers(common
 #  ${common_headers})

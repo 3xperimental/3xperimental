@@ -1,5 +1,5 @@
 // Copyright (c) 2018-2019, The Arqma Network
-// Copyright (c) 2018, The Monero Project
+// Copyright (c) 2020, 3xperimental Project
 //
 // All rights reserved.
 //
@@ -37,7 +37,7 @@
 #include "common/error.h"
 
 //! If precondition fails, return `::error::kInvalidArgument` in current scope.
-#define ARQMA_PRECOND(...)                            \
+#define 3xperimental_PRECOND(...)                            \
     do                                                 \
     {                                                  \
         if (!( __VA_ARGS__ ))                          \
@@ -45,7 +45,7 @@
     } while (0)
 
 //! Check `expect<void>` and return errors in current scope.
-#define ARQMA_CHECK(...)                           \
+#define 3xperimental_CHECK(...)                           \
     do                                              \
     {                                               \
         const ::expect<void> result = __VA_ARGS__ ; \
@@ -58,13 +58,13 @@
 
     \throw std::system_error with `expect<T>::error()`, filename and line
         number when `expect<T>::has_error() == true`.*/
-#define ARQMA_UNWRAP(...)                                        \
+#define 3xperimental_UNWRAP(...)                                        \
     ::detail::expect::unwrap( __VA_ARGS__ , nullptr, __FILE__ , __LINE__ )
 
 /* \throw std::system_error with `code` and `msg` as part of the details. The
 filename and line number will automatically be injected into the explanation
 string. `code` can be any enum convertible to `std::error_code`. */
-#define ARQMA_THROW(code, msg) \
+#define 3xperimental_THROW(code, msg) \
     ::detail::expect::throw_( code , msg , __FILE__ , __LINE__ )
 
 

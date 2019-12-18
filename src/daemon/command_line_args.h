@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2014-2018, The Monero Project
 //
 // All rights reserved.
@@ -36,7 +36,7 @@
 
 namespace daemon_args
 {
-  std::string const WINDOWS_SERVICE_NAME = "ArQmA-Network Node";
+  std::string const WINDOWS_SERVICE_NAME = "3xperimental-Network Node";
 
   const command_line::arg_descriptor<std::string, false, true, 2> arg_config_file = {
     "config-file"
@@ -99,7 +99,7 @@ namespace daemon_args
   
   const command_line::arg_descriptor<bool> arg_public_node = {
     "public-node"
-  , "Allow Arq-Net Users to use this Arqma Node as a Remote-Node (restricted RPC mode, view-only commands) and advertise it over P2P Network Protocol"
+  , "Allow Arq-Net Users to use this 3xperimental Node as a Remote-Node (restricted RPC mode, view-only commands) and advertise it over P2P Network Protocol"
   , false
   };
 

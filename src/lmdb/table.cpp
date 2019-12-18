@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2018, The Monero Project
 // All rights reserved.
 //
@@ -31,14 +31,14 @@ namespace lmdb
 {
     expect<MDB_dbi> table::open(MDB_txn& write_txn) const noexcept
     {
-        ARQMA_PRECOND(name != nullptr);
+        3xperimental_PRECOND(name != nullptr);
 
         MDB_dbi out;
-        ARQMA_LMDB_CHECK(mdb_dbi_open(&write_txn, name, flags, &out));
+        3xperimental_LMDB_CHECK(mdb_dbi_open(&write_txn, name, flags, &out));
         if (key_cmp && !(flags & MDB_INTEGERKEY))
-            ARQMA_LMDB_CHECK(mdb_set_compare(&write_txn, out, key_cmp));
+            3xperimental_LMDB_CHECK(mdb_set_compare(&write_txn, out, key_cmp));
         if (value_cmp && !(flags & MDB_INTEGERDUP))
-            ARQMA_LMDB_CHECK(mdb_set_dupsort(&write_txn, out, value_cmp));
+            3xperimental_LMDB_CHECK(mdb_set_dupsort(&write_txn, out, value_cmp));
         return out;
     }
 }

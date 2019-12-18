@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Arqma Network
+# Copyright (c) 2018-2019, The 3xperimental Network
 # Copyright (c) 2014-2018, The Monero Project
 #
 # All rights reserved.
@@ -59,9 +59,9 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
   add_definitions(-DDEBUG_TMPDIR_LOG=1)
 endif()
 
-arqma_private_headers(daemonizer
+3xperimental_private_headers(daemonizer
   ${daemonizer_private_headers})
-arqma_add_library(daemonizer
+3xperimental_add_library(daemonizer
   ${daemonizer_sources}
   ${daemonizer_headers}
   ${daemonizer_private_headers})

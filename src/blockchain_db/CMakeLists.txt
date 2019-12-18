@@ -1,5 +1,5 @@
 # Copyright (c) 2018-2019, The Arqma Network
-# Copyright (c) 2014-2018, The Monero Project
+# Copyright (c) 2020, 3xperimental Project
 #
 # All rights reserved.
 #
@@ -54,9 +54,9 @@ if (BERKELEY_DB)
   )
 endif()
 
-arqma_private_headers(blockchain_db
+3xperimental_private_headers(blockchain_db
   ${crypto_private_headers})
-arqma_add_library(blockchain_db
+3xperimental_add_library(blockchain_db
   ${blockchain_db_sources}
   ${blockchain_db_headers}
   ${blockchain_db_private_headers})

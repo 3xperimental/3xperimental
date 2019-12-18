@@ -1,5 +1,5 @@
 // Copyright (c) 2018-2019, The Arqma Network
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2020, 3xperimental Project
 //
 // All rights reserved.
 //
@@ -39,8 +39,8 @@
 
 using namespace epee;
 
-#undef ARQMA_DEFAULT_LOG_CATEGORY
-#define ARQMA_DEFAULT_LOG_CATEGORY "checkpoints"
+#undef 3xperimental_DEFAULT_LOG_CATEGORY
+#define 3xperimental_DEFAULT_LOG_CATEGORY "checkpoints"
 
 namespace cryptonote
 {
@@ -273,10 +273,10 @@ namespace cryptonote
 
     // All four ArQ-Net domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = {
-        "checkpoints.arqma.com",
-        "checkpoints.myarqma.com",
-        "checkpoints.supportarqma.com",
-        "checkpoints.supportarqma.eu"
+        "checkpoints.3xperimental.com",
+        "checkpoints.my3xperimental.com",
+        "checkpoints.support3xperimental.com",
+        "checkpoints.support3xperimental.eu"
 	};
 
     static const std::vector<std::string> testnet_dns_urls = {

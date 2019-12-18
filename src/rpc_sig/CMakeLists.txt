@@ -1,4 +1,4 @@
-# Copyright (c) 2019, The Arqma Network
+# Copyright (c) 2019, The 3xperimental Network
 #
 # All rights reserved.
 #
@@ -34,9 +34,9 @@ set(rpc_sig_headers
 
 set(rpc_sig_private_headers)
 
-arqma_private_headers(rpc_sig
+3xperimental_private_headers(rpc_sig
   ${rpc_sig_private_headers})
-arqma_add_library(rpc_sig
+3xperimental_add_library(rpc_sig
   ${rpc_sig_sources}
   ${rpc_sig_headers}
   ${rpc_sig_private_headers})

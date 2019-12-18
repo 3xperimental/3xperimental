@@ -68,10 +68,10 @@ RUN cd boost_${BOOST_VERSION} \
     && ln -sf ../include /opt/android/build/boost/x86 \
     && ln -sf ../include /opt/android/build/boost/x86_64
 
-# Building Arqma from the latest commit on Android branch, this should be kept up to date with master
+# Building 3xperimental from the latest commit on Android branch, this should be kept up to date with master
 # with the necessary fixes by malbit and m2049r to build for mobile.
 RUN cd /opt/android \
-    && git clone https://github.com/arqma/arqma.git --recursive --depth=1 \
-    && cd arqma \
+    && git clone https://github.com/3xperimental/3xperimental.git --recursive --depth=1 \
+    && cd 3xperimental \
     && mkdir -p build/release \
     && ./build-all-arch.sh

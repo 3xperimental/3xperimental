@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2017-2018, The Monero Project
 //
 // All rights reserved.
@@ -45,8 +45,8 @@
 #include "wallet/api/unsigned_transaction.h"
 #include "wallet/api/pending_transaction.h"
 
-#undef ARQMA_DEFAULT_LOG_CATEGORY
-#define ARQMA_DEFAULT_LOG_CATEGORY "debugtools.objectsizes"
+#undef 3xperimental_DEFAULT_LOG_CATEGORY
+#define 3xperimental_DEFAULT_LOG_CATEGORY "debugtools.objectsizes"
 
 class size_logger
 {

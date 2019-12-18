@@ -188,24 +188,24 @@ RUN set -ex && \
     rm -rf /var/lib/apt
 COPY --from=builder /src/build/release/bin /usr/local/bin/
 
-# Below command is creating Arqma user to do not run daemon as a root
-RUN adduser --system --group --disabled-password arqma && \
-	mkdir -p /wallet /home/arqma/.arqma && \
-	chown -R arqma:arqma /home/arqma/.arqma && \
-	chown -R arqma:arqma /wallet
+# Below command is creating 3xperimental user to do not run daemon as a root
+RUN adduser --system --group --disabled-password 3xperimental && \
+	mkdir -p /wallet /home/3xperimental/.3xperimental && \
+	chown -R 3xperimental:3xperimental /home/3xperimental/.3xperimental && \
+	chown -R 3xperimental:3xperimental /wallet
 
 # Contains the blockchain
-VOLUME /home/arqma/.arqma
+VOLUME /home/3xperimental/.3xperimental
 
 # Generate your wallet via accessing the container and run:
 # cd /wallet
-# arqma-wallet-cli
+# 3xperimental-wallet-cli
 VOLUME /wallet
 
 EXPOSE 19993
 EXPOSE 19994
 
-# switch to user arqma
-USER arqma
+# switch to user 3xperimental
+USER 3xperimental
 
-ENTRYPOINT ["arqmad", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=19993", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=19994", "--non-interactive", "--confirm-external-bind"]
+ENTRYPOINT ["3xperimentald", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=19993", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=19994", "--non-interactive", "--confirm-external-bind"]

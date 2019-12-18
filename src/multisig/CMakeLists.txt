@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Arqma Network
+# Copyright (c) 2018-2019, The 3xperimental Network
 # Copyright (c) 2017-2018, The Monero Project
 #
 # All rights reserved.
@@ -35,10 +35,10 @@ set(multisig_headers)
 set(multisig_private_headers
   multisig.h)
 
-arqma_private_headers(multisig
+3xperimental_private_headers(multisig
   ${multisig_private_headers})
 
-arqma_add_library(multisig
+3xperimental_add_library(multisig
   ${multisig_sources}
   ${multisig_headers}
   ${multisig_private_headers})

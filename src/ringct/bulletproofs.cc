@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019, The Arqma Network
+// Copyright (c) 2018-2019, The 3xperimental Network
 // Copyright (c) 2017-2018, The Monero Project
 //
 // All rights reserved.
@@ -44,8 +44,8 @@ extern "C"
 #include "multiexp.h"
 #include "bulletproofs.h"
 
-#undef ARQMA_DEFAULT_LOG_CATEGORY
-#define ARQMA_DEFAULT_LOG_CATEGORY "bulletproofs"
+#undef 3xperimental_DEFAULT_LOG_CATEGORY
+#define 3xperimental_DEFAULT_LOG_CATEGORY "bulletproofs"
 
 //#define DEBUG_BP
 

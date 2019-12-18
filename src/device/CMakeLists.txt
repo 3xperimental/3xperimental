@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Arqma Network
+# Copyright (c) 2018-2019, The 3xperimental Network
 # Copyright (c) 2014-2017, The Monero Project
 #
 # All rights reserved.
@@ -58,10 +58,10 @@ set(device_headers
 
 set(device_private_headers)
 
-arqma_private_headers(device
+3xperimental_private_headers(device
   ${device_private_headers})
 
-arqma_add_library(device
+3xperimental_add_library(device
   ${device_sources}
   ${device_headers}
   ${device_private_headers})

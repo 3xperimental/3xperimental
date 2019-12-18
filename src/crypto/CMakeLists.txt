@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Arqma Network
+# Copyright (c) 2018-2019, The 3xperimental Network
 # Copyright (c) 2014-2018, The Monero Project
 #
 # All rights reserved.
@@ -74,9 +74,9 @@ set(crypto_private_headers
   skein.h
   skein_port.h)
 
-arqma_private_headers(cncrypto
+3xperimental_private_headers(cncrypto
   ${crypto_private_headers})
-arqma_add_library(cncrypto
+3xperimental_add_library(cncrypto
   ${crypto_sources}
   ${crypto_headers}
   ${crypto_private_headers})

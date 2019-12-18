@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Arqma Network
+# Copyright (c) 2018-2019, The 3xperimental Network
 # Copyright (c) 2014-2018, The Monero Project
 #
 # All rights reserved.
@@ -63,9 +63,9 @@ set(daemon_private_headers
   ../p2p/p2p_protocol_defs.h
   ../p2p/stdafx.h)
 
-arqma_private_headers(daemon
+3xperimental_private_headers(daemon
   ${daemon_private_headers})
-arqma_add_executable(daemon
+3xperimental_add_executable(daemon
   ${daemon_sources}
   ${daemon_headers}
   ${daemon_private_headers})
@@ -95,5 +95,5 @@ target_link_libraries(daemon
     ${Blocks})
 set_property(TARGET daemon
   PROPERTY
-    OUTPUT_NAME "arqmad")
+    OUTPUT_NAME "3xperimentald")
 install(TARGETS daemon DESTINATION bin)

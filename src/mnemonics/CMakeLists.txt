@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Arqma Network
+# Copyright (c) 2018-2019, The 3xperimental Network
 # Copyright (c) 2014-2018, The Monero Project
 #
 # All rights reserved.
@@ -50,9 +50,9 @@ set(mnemonics_private_headers
   esperanto.h
   lojban.h)
 
-arqma_private_headers(mnemonics
+3xperimental_private_headers(mnemonics
   ${mnemonics_private_headers})
-arqma_add_library(mnemonics
+3xperimental_add_library(mnemonics
   ${mnemonics_sources}
   ${mnemonics_headers}
   ${mnemonics_private_headers})
